@@ -1,0 +1,1 @@
+#Static PHP Starter Kit
