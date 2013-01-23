@@ -1,76 +1,27 @@
-<?php 
+<?php
+$site_name = 'Vista Ridge Ranch';
+$url = 'http://vistaridgeranch.us/';
 include("password_protect.php"); 
-include("inc/functions.php"); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+include("inc/functions.php"); 
+?>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Static Wireframe</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><?=$co_name?></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="http://www.kevinleary.net/wp-samples/js/jquery.url.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.2" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/skins/tango/skin.css" />        
 
-<script type="text/javascript" src="js/rssfeed.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-	$('#rssfeed').rssfeed('http://www.cityofkennedale.com/support/newsflash.xml');
-});
-</script>
-
-<script type="text/javascript">
-$(function(){
-	$page = jQuery.url.attr("file");
-	if(!$page) {
-		$page = 'index.html';
-	}
-	$('#navigation li a').each(function(){
-		var $href = $(this).attr('href');
-		if ( ($href == $page) || ($href == '') ) {
-			$(this).addClass('on');
-		} else {
-			$(this).removeClass('on');
-		}
-	});
-});
-</script>
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-
-<body>
-
-<div id="page-wrapper">
-
-	<div id="nav-wrapper">
-    
-    
-		 
-           
-    	<div id="nav">
-        
-        
-       <div id="logo">
-        	
-        	<a href="index.php"><img src="images/logo.png" alt="Logo" border="0px" /></a>
-           
-       </div>	
-       
-        <ul id="navigation">
-        
-        	<li><a href="index.php" class="primary-nav">Home</a></li>
-            <li><a href="page1.php">Page1</a></li>
-            <li><a href="page2.php">Page2</a></li>
-            <li><a href="page3.php">Page3</a></li>
-            <li><a href="page4.php">Page4</a></li>
-            <li><a href="page5.php">Page5</a></li>
-            <li><a href="page6.php">Page6</a></li>
-         
-         </ul>
-        
-        </div><!--end nav-->
-    
-    </div><!--end nav wrapper-->
-    
-   <div class="clear"></div>
-    
-   

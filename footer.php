@@ -1,31 +1,24 @@
-<div id="footer-container">
-        
-        	<div id="footer">
-            	
-                <img src="images/logo.png" />
-            	
-                <ul>
-                    
-                	<li><a href="index.php">Home</a></li>
-                    <li><a href="page1.php">Page1</a></li>
-                    <li><a href="page2.php">Page2</a></li>
-                    <li><a href="page3.php">Page3</a></li>
-                    <li><a href="page4.php">Page4</a></li>
-                    <li><a href="page5.php">Page5</a></li>
-                    <li><a href="page6.php">Page6</a></li>
-                    
-               </ul>
-                    
-            
-            
-            </div><!--end footer-->
-        
-        
-        </div><!--end footer-container-->
+            <footer id="footer-container">
+                <div id="footer">
+                    <img src="images/logo.png" />
+                    <ul>
+                        <?=nav_list();?>
+                   </ul>
+                </footer><!--end footer-->
+            </div><!--end footer-container-->
+        </div><!--end page-wrapper-->
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 
-</div><!--end page-wrapper-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-
-</body>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
